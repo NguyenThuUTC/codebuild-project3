@@ -4,7 +4,7 @@ USER root
 
 WORKDIR /src
 
-COPY ./requirements.txt requirements.txt
+COPY . /src
 
 # Dependencies required for psycopg2 (used for Postgres client)
 RUN apt update -y && apt install -y build-essential libpq-dev
